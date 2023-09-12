@@ -1,11 +1,11 @@
 class Solution {
     public int[] runningSum(int[] nums) {
-        int sum=0;
-        int sumArr[]=new int[nums.length];
-        for(int i=0;i<nums.length;i++){
-     sum=sum+nums[i];
-       sumArr[i]=sum;
+        int x=1;
+        for(int i=1;i<nums.length;i++){
+            nums[x]=nums[i]+nums[i-1];
+            x++;
+     
         }
         
-   return sumArr; }
+   return nums; }
 }
