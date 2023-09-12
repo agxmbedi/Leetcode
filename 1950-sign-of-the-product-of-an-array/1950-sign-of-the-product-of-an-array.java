@@ -11,5 +11,5 @@ class Solution {
            return -1;
        }
         
-    return (int)product;}
+    return 0;}
 }
